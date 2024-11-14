@@ -1,0 +1,14 @@
+.about-us {
+    grid-area: about-us;
+
+    border-radius: 10px;
+
+    background-color: #fff;
+}
+
+@media (max-width: 978px){
+    .about-us  {
+        height: 400px;
+    }
+    
+}

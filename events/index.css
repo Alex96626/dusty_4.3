@@ -1,0 +1,7 @@
+.events {
+    grid-area: events;
+
+    border-radius: 10px;
+
+    background-color: #fff;
+}

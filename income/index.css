@@ -1,0 +1,13 @@
+.income {
+    border-radius: 10px;
+
+    background-color: #fff;
+}
+
+.income_theme-primary {
+    grid-area: income-up;
+}
+
+.income_theme-secondary {
+    grid-area: income-down;
+}

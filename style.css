@@ -1,0 +1,49 @@
+
+@import url("./header/index.css");
+@import url("./sidebar/index.css");
+@import url("./content/index.css");
+@import url("./facilities/index.css");
+@import url("./about-us/index.css");
+@import url("./achievements/index.css");
+@import url("./events/index.css");
+@import url("./fin-statistics/index.css");
+@import url("./income/index.css");
+
+
+.page { 
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    grid-template-rows: 155px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content";
+
+    box-sizing: border-box;
+    width: 1600px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    font-family: 'Roboto', Helvetica, sans-serif;
+
+    background-color: #F7F8FA;
+}
+
+@media(max-width: 1400px) {
+    .page {
+        grid-template-areas: 
+        "header header"
+        "content content";
+    }
+}
+
+@media(max-width: 400px) {
+        .page{
+            grid-template-columns: 1fr;
+        }
+    }
+
+

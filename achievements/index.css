@@ -1,0 +1,7 @@
+.achievements {
+    grid-area: achievements;
+
+    border-radius: 10px;
+
+    background: #fff;
+}

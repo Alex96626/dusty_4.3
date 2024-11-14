@@ -1,0 +1,59 @@
+@import url("./content-header/index.css");
+@import url("./facilities/index.css");
+.content {
+    grid-area: content;
+
+    padding: 0 60px;
+}
+
+.content__сontainer {
+    display: grid;
+    grid-template-columns: 160px repeat(2, calc(25% - 80px)) minmax(calc(50% - 160px), 445px);
+    grid-template-rows: repeat(7, 160px);
+    gap: 30px;
+    grid-template-areas: 
+    "facilities facilities facilities about-us"
+    "achievements events events about-us"
+    "achievements events events about-us"
+    "achievements events events about-us"
+    "achievements events events about-us"
+    "fin-statistics fin-statistics income-up about-us"
+    "fin-statistics fin-statistics income-down about-us";
+
+    margin-top: 40px;
+}
+
+@media(max-width: 978px) {
+    .content {
+        padding: 0 40px;
+    }
+
+      .content__сontainer {
+        grid-template-columns: repeat(4, minmax(calc(25% - 30px), 150px ));
+        grid-template-rows: repeat(7, 160px);
+
+        grid-template-areas: 
+        "facilities facilities facilities facilities"
+        "achievements events events events"
+        "achievements events events events"
+        "achievements events events events"
+        "achievements events events events"
+        "fin-statistics fin-statistics income-up income-up"
+        "fin-statistics fin-statistics income-down income-down"
+        "about-us about-us about-us about-us"
+        ;
+    }
+}
+
+@media(max-width:768px) {
+    .content {
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:500px) {
+    .content__сontainer {
+       display: flex;
+       flex-direction: column;
+    }
+}
